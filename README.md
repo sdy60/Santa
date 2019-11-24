@@ -34,7 +34,7 @@ B) Get remotelly the required files from github repo
   4) Go into public folder and run the following:
   
   	REM delete existed files (404.html and index.html)
-  	del /A *							
+  	del /A /F /Q *							
   
     REM initialize git environment
   	git init   							
