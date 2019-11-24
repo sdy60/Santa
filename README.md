@@ -40,7 +40,7 @@ B) Get remotelly the required files from github repo
   	git init   							
     	
 	REM connect to the repo
-	git remote add origin https://github.com/iarv69/Santa.git	 
+	git remote add origin https://github.com/sdy60/Santa.git	 
     	
     REM pull required files	
 	git reset --hard FETCH_HEAD    				
