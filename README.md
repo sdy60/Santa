@@ -31,17 +31,19 @@ A) Initially we create the firebase environment
 
 B) Get remotelly the required files from github repo
   
-  4) Go into public folder and run the batch file fetchFromGithubRepo.bat.
+  4) Go into public folder and run the following:
   
-  	The bat file does the following:
+  	REM delete existed files (404.html and index.html)
+  	del /A *							
   
-  	a) del /A *							#delete existed files (404.html and index.html)
-  
-  	b) git init   							#initialize git environment
+    REM initialize git environment
+  	git init   							
     	
-	c) git remote add origin https://github.com/iarv69/Santa.git	#connect to the repo 
+	REM connect to the repo
+	git remote add origin https://github.com/iarv69/Santa.git	 
     	
-	d) git reset --hard FETCH_HEAD    				#pull the required files
+    REM pull required files	
+	git reset --hard FETCH_HEAD    				
 
 C) Deployment and execution
 
